@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+.s1{
+    width: 100%;
+    background-color: #3B322D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 1021px;
+}
+.text p{
+    width: 580px;
+    height: 72px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: center;
+    color: #EFE7E2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.text h2{
+    width: 580px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 12px;
+}
+.text{
+    width: max-content;
+    height: max-content;
+}
+.images{
+    width: 1210px;
+    height: 637px;
+    background-color: aqua;
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.block{
+    border: 10px solid #3B322D;
+}
+.block:nth-child(1){
+    grid-column: 1/3;
+}
+.block:nth-child(3){
+    grid-column: 2/4;
+}
+
+.wrapper{
+    height: 637px;
+    width: 1180px;
+    background-color: #3B322D;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20px 1fr;
+    grid-gap: 15px;
+}
+
+.blocks{
+    border: 1px;
+    background: green;
+    
+}
+
+.blocks:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url('../assets/images/photo.png');
+    background-size: cover;
+}
+.blocks:nth-child(6){
+    grid-column: 3/5;
+    grid-row: 2/4;
+    background-size: cover;
+    background-image: url('../assets/images/photo5.png')
+
+}
+.blocks:nth-child(2){
+    background-size: cover;
+    background-image: url('../assets/images/photo3.png');
+}
+.blocks:nth-child(3){
+    background-size: cover;
+    background-image: url('../assets/images/photo4.png');
+}
+.blocks:nth-child(5){
+    grid-row: 3;
+    background-size: cover;
+    background-image: url('../assets/images/photo1.png');
+}
+.blocks:nth-child(4){
+    grid-row: 3;
+    background-image: url('../assets/images/photo2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
